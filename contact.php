@@ -1,10 +1,46 @@
+<?php
+$insert = false;
+if (isset($_POST['fname'])) {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+
+    $conn = mysqli_connect($servername, $username, $password);
+
+    if (!$conn) {
+        die("Connection failed due to " . mysqli_connect_error());
+    }
+    // echo "Success connecting to the DB";
+
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $num = $_POST['num'];
+    $add = $_POST['add'];
+    $msg = $_POST['msg'];
+
+
+    $sql = "INSERT INTO `Form`.`contactADS` (`First Name`, `Last Name`, `Email`, `Phone Number`, `Address`, `Message`, `Date/Time`) VALUES ('$fname', '$lname', '$email', '$num', '$add', '$msg', current_timestamp());";
+
+
+    if ($conn->query($sql) == true) {
+        // echo"succesfully Inserted";
+        $insert = true;
+    } else {
+        echo "ERROR: $sql <br> $conn->error";
+    }
+
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <link rel="shortcut icon" href="images/ap.svg" type="image/x-icon">
     <title>Abhay Da Swaad | aa-gaye-swaad.com</title>
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" media="screen and (max-width: 1400px)" href="css/phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +62,9 @@
         <ul>
             <li class="item"><a href="index.html">Home</a></li>
             <li class="item"><a href="about.html">About Us</a></li>
-            <li class="item"><a href="services.html" class="active">Services</a></li>
+            <li class="item"><a href="services.html">Services</a></li>
             <li class="item"><a href="offers.html">Offers</a></li>
-            <li class="item"><a href="contact.php">Contact Us</a></li>
+            <li class="item"><a href="contact.php" class="active">Contact Us</a></li>
         </ul>
 
         <div class="aside">
@@ -49,7 +85,7 @@
                 </h1>
 
 
-                <form action="">
+                <form action="contact.php" method="POST">
 
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
 
@@ -64,7 +100,7 @@
 
                     <br>
 
-                    <button class="btn1" id="locate" onclick="chkPhone()">LOGIN</button>
+                    <button class="btn1" id="login" onclick="chkPhone()">LOGIN</button>
 
                 </form>
                 <p>
@@ -107,7 +143,7 @@
 
                     <br>
 
-                    <button class="btn1" id="locate1" onclick="chkEmail();">CONTINUE</button>
+                    <button class="btn1" id="continue1" onclick="chkEmail();">CONTINUE</button>
 
                 </form>
                 <p>
@@ -117,129 +153,92 @@
 
 
             <span onclick="openNav()">
-                <button class="btn1" id="log">Log in</button>
+                <button class="button1" id="log">Log in</button>
             </span>
 
             <span onclick="openNav2()">
-                <button class="btn" id="sign">Sign up</button>
+                <button class="button" id="sign">Sign up</button>
             </span>
 
         </div>
     </nav>
-
-    <!-- Timeline Section -->
-    <h1>We provide:</h1>
-    <div class="timeline">
-
-
-        <div class="container left">
-
-            <div class="content">
-                <h2>No Minimum Order</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, suscipit?</p>
-            </div>
-
+    <?php
+    if ($insert == true) {
+        echo "<p class='submitMsg'>Thanks for submitting your form. We are happy to see you joining us for the US trip</p>";
+    }
+    ?>
+    <!-- Form Section -->
+    <div class="full">
+        <div class="upper">
+            <img src="images/3124518.jpeg" alt="">;
+            <h1>CONTACT US</h1>
         </div>
 
-        <div class="container right">
+        <div class="lower">
+            <div class="left">
 
-            <div class="content">
-                <h2>Easy access to customers</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam dolore.</p>
+                <div class="up">
+                    <img src="images/phone.png" alt="">
+                    <br> Call us directly at
+                    <br>
+                    <b>+91-8457384384</b>
+                </div>
+
+                <div class="down">
+                    <img src="images/chat.png" alt="">
+                    <br> Chat with our support team
+                    <br>
+
+                    <button class="btn" id="locate">Locate</button>
+                </div>
             </div>
 
-        </div>
+            <div class="right">
+                <form action="contact.php" method="POST">
+                    <div class="form">
+                        <label for="fname">FIRST NAME</label>
+                        <br>
+                        <input type="text" placeholder="First Name" id="fname" name="fname" class="textbox">
+                    </div>
 
-        <div class="container left">
+                    <div class="form">
+                        <label for="lname">LAST NAME</label>
+                        <br>
+                        <input type="text" placeholder="Last Name" id="lname" name="lname" class="textbox">
 
-            <div class="content">
-                <h2>Best quality Food</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, suscipit?</p>
+                    </div>
+
+                    <div class="form">
+                        <label for="email">EMAIL</label>
+                        <br>
+                        <input type="text" placeholder="Email" id="email" name="email" class="textbox">
+                    </div>
+
+                    <div class="form">
+                        <label for="num">PHONE NUMBER</label>
+                        <br>
+                        <input type="number" placeholder="Phone Number" name="num" id="num" class="textbox">
+                    </div>
+
+                    <div class="form">
+                        <label for="add">ADDRESS</label>
+                        <br>
+                        <textarea placeholder="Address" id="add" name="add" class="textbox"></textarea>
+                    </div>
+
+                    <div class="form">
+                        <label for="msg">MESSAGE</label>
+                        <br>
+                        <textarea placeholder="Message" id="msg" name="msg" class="textbox"></textarea>
+                    </div>
+
+                    <button class="btn1" id="locate" type="submit">Submit</button>
+                </form>
+                <br>
+
+
             </div>
-
         </div>
-
-        <div class="container right">
-
-            <div class="content">
-                <h2>Lightning Fast-Delivery</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam dolore.</p>
-            </div>
-
-        </div>
-
-        <div class="container left">
-
-            <div class="content">
-                <h2>Live Order Tracking</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vel ut doloremque.</p>
-            </div>
-
-        </div>
-
-        <div class="container right">
-
-            <div class="content">
-                <h2>Groceries Delivery</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam dolore.</p>
-            </div>
-
-        </div>
-
-        <div class="container left">
-
-            <div class="content">
-                <h2>Medicines at your doorstep</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vel ut doloremque.</p>
-            </div>
-
-        </div>
-
-        <div class="container right">
-
-            <div class="content">
-                <h2>Lunchboxes for everyone</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam dolore.</p>
-            </div>
-
-        </div>
-
-        <div class="container left">
-
-            <div class="content">
-                <h2>Instant pickup and drop services</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vel ut doloremque.</p>
-            </div>
-
-        </div>
-
-        <div class="container right">
-
-            <div class="content">
-                <h2>8 different payment methods</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam dolore.</p>
-            </div>
-
-        </div>
-
-        <div class="container left">
-
-            <div class="content">
-                <h2>24/7 Customer Support Chats</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam vel ut doloremque.</p>
-            </div>
-
-        </div>
-
-        <div class="container right">
-
-            <div class="content">
-                <h2>Available on all digital platforms</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, totam dolore.</p>
-            </div>
-
-        </div>
-
     </div>
 
     <!-- Footer Section -->
@@ -335,7 +334,6 @@
         </div>
 
     </section>
-
 
     <a href="#" id="scroll">
         <span></span>

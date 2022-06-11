@@ -1,76 +1,82 @@
 /* CSS Reset  */
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
     color: white;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-html{
+html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     /* background-color: #b0b5be; */
 }
 
 
-
 /* CSS Variables */
-:root{
-    --navbar-height:60px;
+
+:root {
+    --navbar-height: 60px;
 }
- 
+
+
 /* Navigation bar */
-#navbar{
+
+#navbar {
     display: flex;
-    align-items: center ;
+    align-items: center;
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 100;
     box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
     /* background-color: orange; */
     /* background-color: cadetblue; */
     background-color: white;
-    background-color: #FFFFFF ;
+    background-color: #FFFFFF;
     position: absolute;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     z-index: -1;
     /* opacity: 0.9; */
 }
 
+
 /* Navigation bar : logo and image */
-#logo{
-    margin:23px 23px;
+
+#logo {
+    margin: 23px 23px;
     /* background-color: orange; */
     /* background-color: cadetblue; */
 }
 
-#logo img{
-    height:50px;
-    margin:10px  0px;
-
+#logo img {
+    height: 50px;
+    margin: 10px 0px;
 }
 
+
 /* Navigation bar : List styling */
-#navbar ul{
+
+#navbar ul {
     display: flex;
 }
 
-#navbar ul li{
+#navbar ul li {
     list-style: none;
     font-size: 1.3rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     display: block;
     color: white;
-    color:orange;
+    color: orange;
     color: black;
     /* color: cadetblue; */
     text-decoration: none;
@@ -79,16 +85,15 @@ html{
     border-radius: 20px;
     font-family: 'Baloo Bhaijaan 2', cursive;
     font-weight: bolder;
-    margin:0px 10px;
+    margin: 0px 10px;
 }
 
-#navbar ul li a:hover,#navbar ul li a.active{
+#navbar ul li a:hover,
+#navbar ul li a.active {
     /* color: rgb(255, 230, 206);
     background-color: rgb(255, 136, 0); */
-    
     /* color: orange;
     background-color: white; */
-    
     color: rgb(255, 136, 0);
     /* color: rgb(72, 142, 145); */
     /* color: rgb(62, 152, 155); */
@@ -97,19 +102,18 @@ html{
 }
 
 
-
 /* Main Section */
-.main{
+
+.main {
     margin: 0 auto;
     line-height: 1.4;
     max-width: 1180px;
     min-height: 80vh;
     padding-top: 40px;
     padding-bottom: 8em;
-
 }
 
-.main h1{
+.main h1 {
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
     color: black;
@@ -121,7 +125,7 @@ html{
     font-weight: bold;
 }
 
-.main p{
+.main p {
     line-height: 1.4;
     font-size: 16px;
     font-weight: 300;
@@ -131,11 +135,12 @@ html{
 
 
 /* Contact Section  */
-.contact-conatainer{
+
+.contact-conatainer {
     background-color: black;
 }
 
-#contact{
+#contact {
     display: flex;
     /* position: relative; */
     background-color: black;
@@ -146,72 +151,73 @@ html{
     justify-content: center;
 }
 
-#contact h4{
+#contact h4 {
     margin: 20px 50px;
-    color:gray;
+    color: gray;
 }
 
-#contact ul{
-    margin:10px 50px;
+#contact ul {
+    margin: 10px 50px;
     list-style: none;
     padding: 10px 0px;
 }
 
-#contact ul li a{
+#contact ul li a {
     text-decoration: none;
-    
 }
 
-.company_{
+.company_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.info_{
+.info_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.legal_{
+.legal_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.down_{
+.down_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.down_ img{
-    height:200px; 
+.down_ img {
+    height: 200px;
 }
+
 
 /* Copyright section */
-.copyright{
+
+.copyright {
     display: flex;
     background-color: black;
 }
 
-.copyright hr{
+.copyright hr {
     /* display: block; */
     color: white;
-    width:80%;
+    width: 80%;
     align-items: center;
     margin: auto;
 }
 
-.copyright .logo{
+.copyright .logo {
     /* display: flex; */
-    width:163px;
-    height:163px;
+    width: 163px;
+    height: 163px;
     /* border:2px solid red; */
     justify-content: center;
     align-items: center;
@@ -219,63 +225,62 @@ html{
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
-.copyright .logo img{
+.copyright .logo img {
     display: block;
-    height:50px;
+    height: 50px;
     margin: 50px 0px 5px 50px;
 }
 
-.copyright #legal{
-    margin:auto;
+.copyright #legal {
+    margin: auto;
 }
 
-.social img{
-    width:40px;
+.social img {
+    width: 40px;
     margin: 60px 10px 52px 10px;
 }
 
+
 /* Utility Class */
-.h-primary{
+
+.h-primary {
     font-family: 'Bree Serif', serif;
     font-size: 2.5rem;
-    padding:20px;
+    padding: 20px;
 }
 
-.h-secondary{
+.h-secondary {
     font-family: 'Bree Serif', serif;
     font-size: 1.5rem;
-    padding:20px;
+    padding: 20px;
 }
 
-.btn{
-    width:150px;
+.btn {
+    width: 150px;
     display: inline-block;
-    background:rgb(255, 136, 0);
-    background:rgb(255, 115, 0);
-    
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
     /* border: 4px solid rgb(255, 136, 0); */
     padding: 5px 20px;
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     border-radius: 5px;
 }
 
-.btn1 span{
-    
+.btn1 span {
     color: rgb(255, 115, 0);
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
-    background:rgb(255, 115, 0);
+    background: rgb(255, 115, 0);
     /* line-height: em; */
-
 }
 
-.btn1{
-    width:150px;
+.btn1 {
+    width: 150px;
     height: 2rem;
     display: inline-block;
     /* background:rgb(255, 136, 0); */
@@ -290,36 +295,50 @@ html{
     font-size: 1.3rem;
 }
 
-.login{
-    height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #F7F7F7; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-
-  box-shadow: grey 2px 2px 5px;
-
+.login {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #F7F7F7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: grey 2px 2px 5px;
 }
 
-.signup{
-    height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #F7F7F7; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-
-  box-shadow: grey 2px 2px 5px;
-
+.signup {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #F7F7F7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: grey 2px 2px 5px;
 }
 
 .login .closebtn {
@@ -328,16 +347,17 @@ html{
     left: 0;
     font-size: 36px;
     margin-left: 40px;
-  }
+}
+
 .signup .closebtn {
     position: absolute;
     top: 30px;
     left: 0;
     font-size: 36px;
     margin-left: 40px;
-  }
+}
 
-.login h1{
+.login h1 {
     color: black;
     margin-left: 40px;
     margin-top: 40px;
@@ -345,7 +365,8 @@ html{
     font-weight: 500;
     font-family: 'Lato', sans-serif;
 }
-.signup h1{
+
+.signup h1 {
     color: black;
     margin-left: 40px;
     margin-bottom: 40px;
@@ -355,27 +376,27 @@ html{
     font-family: 'Lato', sans-serif;
 }
 
-
-.login p{
+.login p {
     color: black;
     font-size: 12px;
-      color: #686b78;
-      margin-top: 6px;
-      margin-left: 40px;
-      font-weight: 500;
-}
-.signup p{
-    color: black;
-    font-size: 12px;
-      color: #686b78;
-      margin-top: 6px;
-      margin-left: 40px;
-      font-weight: 500;
+    color: #686b78;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 500;
 }
 
-.login input{
-    width:360px;
-    height:70px;
+.signup p {
+    color: black;
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.login input {
+    width: 360px;
+    height: 70px;
     color: black;
     line-height: normal;
     font-size: 17px;
@@ -392,9 +413,10 @@ html{
     border: 1px solid grey;
     /* outline: grey; */
 }
-.signup input{
-    width:360px;
-    height:70px;
+
+.signup input {
+    width: 360px;
+    height: 70px;
     color: black;
     line-height: normal;
     font-size: 17px;
@@ -413,7 +435,7 @@ html{
     /* outline: grey; */
 }
 
-.login .phnum{
+.login .phnum {
     position: absolute;
     left: 40px;
     top: 186px;
@@ -425,12 +447,16 @@ html{
     width: 100%;
     color: #93959f;
     /* color: #111; */
-    will-change: transform,color,font-size;
+    will-change: transform, color, font-size;
     pointer-events: none;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
 }
-.signup .phnum,.username,.uemail,.upass{
+
+.signup .phnum,
+.username,
+.uemail,
+.upass {
     position: absolute;
     left: 40px;
     top: 185px;
@@ -442,48 +468,43 @@ html{
     width: 100%;
     color: #93959f;
     /* color: #111; */
-    will-change: transform,color,font-size;
+    will-change: transform, color, font-size;
     pointer-events: none;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
 }
 
-.signup .username{
+.signup .username {
     top: 260px;
 }
 
-.signup .uemail{
+.signup .uemail {
     top: 335px;
 }
 
-.signup .upass{
+.signup .upass {
     top: 410px;
 }
 
-.login .btn1{
-    width:360px;
-    height:50px;
-
+.login .btn1 {
+    width: 360px;
+    height: 50px;
     display: inline-block;
-    background:rgb(255, 136, 0);
-    background:rgb(255, 115, 0);
-    
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
     /* border: 4px solid rgb(255, 136, 0); */
     /* padding: 5px 20px; */
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     border-radius: 5px;
-
     line-height: normal;
     font-size: 17px;
     margin: 0px 40px;
     padding: 0 20px;
     padding-top: 22px;
-
-
     /* width: 100%; */
     text-decoration: none;
     cursor: pointer;
@@ -503,30 +524,25 @@ html{
     text-transform: uppercase;
 }
 
-.signup .btn1{
-    width:360px;
-    height:50px;
-
+.signup .btn1 {
+    width: 360px;
+    height: 50px;
     display: inline-block;
-    background:rgb(255, 136, 0);
-    background:rgb(255, 115, 0);
-    
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
     /* border: 4px solid rgb(255, 136, 0); */
     /* padding: 5px 20px; */
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     border-radius: 5px;
-
     line-height: normal;
     font-size: 17px;
     margin: 0px 40px;
     padding: 0 20px;
     padding-top: 22px;
-
-
     /* width: 100%; */
     text-decoration: none;
     cursor: pointer;
@@ -546,12 +562,11 @@ html{
     text-transform: uppercase;
 }
 
-.center{
-    text-align: center ;
+.center {
+    text-align: center;
 }
 
-
-#scroll{
+#scroll {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -577,8 +592,8 @@ html{
 }
 
 
-
 /* Dark Mode */
+
 body {
     flex-direction: column;
     transition: background 0.2s linear;
@@ -590,16 +605,16 @@ body.dark {
     /* background-color: #292c35; */
 }
 
-body.dark h1{
-    color:rgb(247, 241, 231);
-    text-decoration:dotted underline;
+body.dark h1 {
+    color: rgb(247, 241, 231);
+    text-decoration: dotted underline;
 }
 
-body.dark h2{
+body.dark h2 {
     color: wheat;
 }
 
-body.dark #navbar::before{
+body.dark #navbar::before {
     background-color: rgb(255, 123, 0);
 }
 
@@ -608,47 +623,47 @@ body.dark .label {
     background-color: grey;
 }
 
-body.dark .timeline{
+body.dark .timeline {
     background-color: #474e5d;
-
     /* background-color: #888580; */
     border-color: #b8b1a2;
 }
 
-body.dark .timeline:after{
+body.dark .timeline:after {
     /* background-color: #b8b1a2; */
     background-color: #292c35;
 }
 
-body.dark .container:after{
+body.dark .container:after {
     border-color: #292c35;
 }
 
-body.dark .content{
-    border-color:#292c35;
+body.dark .content {
+    border-color: #292c35;
 }
 
-body.dark .content h2{
-    color:#474e5d;
+body.dark .content h2 {
+    color: #474e5d;
 }
 
-body.dark .content{
-    background-color:#B0B5BE;
+body.dark .content {
+    background-color: #B0B5BE;
 }
 
-body.dark .content p{
-    color:#646668;
+body.dark .content p {
+    color: #646668;
 }
 
-body.dark .left::before{
+body.dark .left::before {
     border-color: transparent transparent transparent #292c35;
     /* border-color:; */
 }
 
-body.dark .right::before{
+body.dark .right::before {
     /* border-color:; */
     border-color: transparent #292c35 transparent transparent;
 }
+
 
 /* body.dark .services-container{
     background-color: #140f0c;
@@ -689,8 +704,7 @@ body.dark .btn{
     margin-right: 10px;
 }
 
-.aside{
-        
+.aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -699,15 +713,12 @@ body.dark .btn{
     /* height: 24px;
     width: 50px; */
     /* transform: scale(1.5); */
-
-    
-        /* display: inline-block; */
-        position: absolute;
-        top: 45px;
-        right: 35px;
-    
-        /* flex-direction: row; */
-        margin-right: 10px;
+    /* display: inline-block; */
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    /* flex-direction: row; */
+    margin-right: 10px;
 }
 
 .label .ball {
@@ -738,11 +749,10 @@ body.dark .btn{
     /* padding-right: 7px; */
 }
 
-.label #moon{
+.label #moon {
     margin-right: 0px;
-    
 }
 
-body.dark #scroll{
+body.dark #scroll {
     background-color: rgb(255, 115, 0);
 }

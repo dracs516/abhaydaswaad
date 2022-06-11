@@ -1,76 +1,82 @@
 /* CSS Reset  */
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
     color: white;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-html{
+html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     /* background-color: #b0b5be; */
 }
 
 
-
 /* CSS Variables */
-:root{
-    --navbar-height:60px;
+
+:root {
+    --navbar-height: 60px;
 }
- 
+
+
 /* Navigation bar */
-#navbar{
+
+#navbar {
     display: flex;
-    align-items: center ;
+    align-items: center;
     position: sticky;
-    top:0px;
+    top: 0px;
     z-index: 100;
     box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
     /* background-color: orange; */
     /* background-color: cadetblue; */
     background-color: white;
-    background-color: #FFFFFF ;
+    background-color: #FFFFFF;
     position: absolute;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     z-index: -1;
     /* opacity: 0.9; */
 }
 
+
 /* Navigation bar : logo and image */
-#logo{
-    margin:23px 23px;
+
+#logo {
+    margin: 23px 23px;
     /* background-color: orange; */
     /* background-color: cadetblue; */
 }
 
-#logo img{
-    height:50px;
-    margin:10px  0px;
-
+#logo img {
+    height: 50px;
+    margin: 10px 0px;
 }
 
+
 /* Navigation bar : List styling */
-#navbar ul{
+
+#navbar ul {
     display: flex;
 }
 
-#navbar ul li{
+#navbar ul li {
     list-style: none;
     font-size: 1.3rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     display: block;
     color: white;
-    color:orange;
+    color: orange;
     color: black;
     /* color: cadetblue; */
     text-decoration: none;
@@ -79,16 +85,15 @@ html{
     border-radius: 20px;
     font-family: 'Baloo Bhaijaan 2', cursive;
     font-weight: bolder;
-    margin:0px 10px;
+    margin: 0px 10px;
 }
 
-#navbar ul li a:hover,#navbar ul li a.active{
+#navbar ul li a:hover,
+#navbar ul li a.active {
     /* color: rgb(255, 230, 206);
     background-color: rgb(255, 136, 0); */
-    
     /* color: orange;
     background-color: white; */
-    
     color: rgb(255, 136, 0);
     /* color: rgb(72, 142, 145); */
     /* color: rgb(62, 152, 155); */
@@ -96,25 +101,28 @@ html{
     text-decoration: underline;
 }
 
+
 /* Form Section */
-.full{
+
+.full {
     position: relative;
     display: block;
     box-sizing: border-box;
 }
-.upper{
+
+.upper {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.upper img{
+.upper img {
     max-width: 100vw;
     z-index: -1;
     opacity: 0.7;
 }
 
-.upper h1{
+.upper h1 {
     /* color:black; */
     /* z-index: 1; */
     position: absolute;
@@ -125,18 +133,17 @@ html{
     text-shadow: 2px 2px black;
 }
 
-.lower{
+.lower {
     /* border:2px solid red; */
     /* position: absolute; */
-    margin:0 30px;
+    margin: 0 30px;
     /* top:80%; */
     background-color: white;
-    color:black;
+    color: black;
     display: block;
     flex-direction: row;
     flex-wrap: nowrap;
     box-sizing: border-box;
-
     margin: 0px 190px;
     padding: 48px 15px;
     /* border: orangered 2px solid; */
@@ -157,11 +164,10 @@ html{
     margin-bottom: 20px;
 }
 
-.lower .left{
+.lower .left {
     /* border: 2px solid green; */
-    width:50%;
+    width: 50%;
     display: block;
-
     /* margin: 0px 0px 50px; */
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
@@ -173,7 +179,7 @@ html{
     box-sizing: border-box;
 }
 
-.lower .left .up{
+.lower .left .up {
     /* border:2px solid red; */
     /* border: orangered 2px solid; */
     padding: 30px 0px;
@@ -199,21 +205,20 @@ html{
     font-size: 20px;
 }
 
-.lower .left .up b{
-    color:cadetblue;
-    color:#FF7200;
+.lower .left .up b {
+    color: cadetblue;
+    color: #FF7200;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
 }
 
-.lower .left .up img{
-    height:60px;
+.lower .left .up img {
+    height: 60px;
     margin: 20px;
 }
 
-.lower .left .down{
+.lower .left .down {
     /* border:2px solid red; */
-    
     /* border: orangered 2px solid; */
     padding: 30px 0px;
     margin: 0px 5px;
@@ -237,15 +242,14 @@ html{
     font-size: 20px;
 }
 
-.lower .left .down img{
-    height:60px;
+.lower .left .down img {
+    height: 60px;
 }
 
 .lower .right {
     display: block;
-    width:50%;
+    width: 50%;
     /* border: 2px solid blue; */
-    
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
     position: relative;
@@ -259,10 +263,10 @@ html{
     box-shadow: grey 2px 2px 5px;
 }
 
-.lower .right .form{
+.lower .right .form {
     /* border: 2px solid red; */
-    display:inline-block;
-    width:50%;
+    display: inline-block;
+    width: 50%;
     flex: 0 0 50%;
     max-width: 50%;
     position: relative;
@@ -270,7 +274,6 @@ html{
     /* padding-right: 15px;
     padding-left: 15px; */
     box-sizing: border-box;
-
     /* border: orangered 2px solid; */
     padding: 2px 0px;
     /* margin: 0px 5px; */
@@ -278,7 +281,7 @@ html{
     /* flex-direction: row; */
     /* flex: 0 0 25%; */
     max-width: 47%;
-    margin: 20px 10px; 
+    margin: 20px 10px;
     justify-content: space-between;
     position: relative;
     /* width: 750px; */
@@ -293,15 +296,14 @@ html{
     /* display: block; */
 }
 
-
-.lower .right form label{
-    color:black;
+.lower .right form label {
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 
-.lower .right form input{
-    color:black;
+.lower .right form input {
+    color: black;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 30px;
@@ -310,22 +312,60 @@ html{
     /* padding: 5px; */
 }
 
-textarea{
+form #login {
+    position: absolute;
+    position: absolute;
+    top: 310px;
+    width: 360px;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
     border-radius: 5px;
-    border-color: transparent  rgb(7, 7, 7)  rgb(7, 7, 7) transparent ;
-    border-width: 2px;
-    font-family: 'Montserrat', sans-serif;
-    width:394.8px;
-    height:70px;
-    color:black;
+    margin: 0px 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
+form #continue {
+    position: absolute;
+    top: 493px;
+    width: 360px;
+    height: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    margin: 14px 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+form #locate {
+    position: absolute;
+    top: 385px;
+    left: 242px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 5px;
+    margin: 0px 40px;
+}
+
+textarea {
+    border-radius: 5px;
+    border-color: transparent rgb(7, 7, 7) rgb(7, 7, 7) transparent;
+    border-width: 2px;
+    font-family: 'Montserrat', sans-serif;
+    width: 394.8px;
+    height: 70px;
+    color: black;
+}
+
+
 /* Contact Section  */
-.contact-conatainer{
+
+.contact-conatainer {
     background-color: black;
 }
 
-#contact{
+#contact {
     display: flex;
     /* position: relative; */
     background-color: black;
@@ -336,72 +376,73 @@ textarea{
     justify-content: center;
 }
 
-#contact h4{
+#contact h4 {
     margin: 20px 50px;
-    color:gray;
+    color: gray;
 }
 
-#contact ul{
-    margin:10px 50px;
+#contact ul {
+    margin: 10px 50px;
     list-style: none;
     padding: 10px 0px;
 }
 
-#contact ul li a{
+#contact ul li a {
     text-decoration: none;
-    
 }
 
-.company_{
+.company_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.info_{
+.info_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.legal_{
+.legal_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.down_{
+.down_ {
     margin: 20px;
     display: inline-block;
     /* border:2px solid red; */
-    width:20%;
+    width: 20%;
 }
 
-.down_ img{
-    height:200px; 
+.down_ img {
+    height: 200px;
 }
+
 
 /* Copyright section */
-.copyright{
+
+.copyright {
     display: flex;
     background-color: black;
 }
 
-.copyright hr{
+.copyright hr {
     /* display: block; */
     color: white;
-    width:80%;
+    width: 80%;
     align-items: center;
     margin: auto;
 }
 
-.copyright .logo{
+.copyright .logo {
     /* display: flex; */
-    width:163px;
-    height:163px;
+    width: 163px;
+    height: 163px;
     /* border:2px solid red; */
     justify-content: center;
     align-items: center;
@@ -409,94 +450,93 @@ textarea{
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
-.copyright .logo img{
+.copyright .logo img {
     display: block;
-    height:50px;
+    height: 50px;
     margin: 50px 0px 5px 50px;
 }
 
-.copyright #legal{
-    margin:auto;
+.copyright #legal {
+    margin: auto;
 }
 
-.social img{
-    width:40px;
+.social img {
+    width: 40px;
     margin: 60px 10px 52px 10px;
 }
 
+
 /* Utility Class */
-.h-primary{
+
+.h-primary {
     font-family: 'Bree Serif', serif;
     font-size: 2.5rem;
-    padding:20px;
+    padding: 20px;
 }
 
-.h-secondary{
+.h-secondary {
     font-family: 'Bree Serif', serif;
     font-size: 1.5rem;
-    padding:20px;
+    padding: 20px;
 }
 
-.btn{
-    width:150px;
+.btn {
+    width: 150px;
     display: inline-block;
-    margin:30px;
-    background:#FF7200;
+    margin: 30px;
+    background: #FF7200;
     padding: 5px 20px;
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
 }
 
-.btn1{
-    width:300px;
+.btn1 {
+    width: 300px;
     height: 40px;
     display: inline-block;
     position: absolute;
-    top:85%;
-    left:52%;
-    margin:30px;
-    background:#FF7200;
+    /* top: 85%;
+    left: 52%; */
+    margin: 30px;
+    background: #FF7200;
     padding: 5px 20px;
     color: white;
-    border:none;
+    border: none;
     border-radius: 3px;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
 }
 
-.button{
-    width:150px;
+.button {
+    width: 150px;
     display: inline-block;
-    background:rgb(255, 136, 0);
-    background:rgb(255, 115, 0);
-    
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
     /* border: 4px solid rgb(255, 136, 0); */
     padding: 5px 20px;
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     border-radius: 5px;
 }
 
-.button1 span{
-    
+.button1 span {
     color: rgb(255, 115, 0);
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
-    background:rgb(255, 115, 0);
+    background: rgb(255, 115, 0);
     /* line-height: em; */
-
 }
 
-.button1{
-    width:150px;
+.button1 {
+    width: 150px;
     height: 2rem;
     display: inline-block;
     /* background:rgb(255, 136, 0); */
@@ -511,36 +551,50 @@ textarea{
     font-size: 1.3rem;
 }
 
-.login{
-    height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #F7F7F7; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-
-  box-shadow: grey 2px 2px 5px;
-
+.login {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #F7F7F7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: grey 2px 2px 5px;
 }
 
-.signup{
-    height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #F7F7F7; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-
-  box-shadow: grey 2px 2px 5px;
-
+.signup {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #F7F7F7;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: grey 2px 2px 5px;
 }
 
 .login .closebtn {
@@ -549,16 +603,17 @@ textarea{
     left: 0;
     font-size: 36px;
     margin-left: 40px;
-  }
+}
+
 .signup .closebtn {
     position: absolute;
     top: 30px;
     left: 0;
     font-size: 36px;
     margin-left: 40px;
-  }
+}
 
-.login h1{
+.login h1 {
     color: black;
     margin-left: 40px;
     margin-top: 40px;
@@ -566,7 +621,8 @@ textarea{
     font-weight: 500;
     font-family: 'Lato', sans-serif;
 }
-.signup h1{
+
+.signup h1 {
     color: black;
     margin-left: 40px;
     margin-bottom: 40px;
@@ -576,27 +632,27 @@ textarea{
     font-family: 'Lato', sans-serif;
 }
 
-
-.login p{
+.login p {
     color: black;
     font-size: 12px;
-      color: #686b78;
-      margin-top: 6px;
-      margin-left: 40px;
-      font-weight: 500;
-}
-.signup p{
-    color: black;
-    font-size: 12px;
-      color: #686b78;
-      margin-top: 6px;
-      margin-left: 40px;
-      font-weight: 500;
+    color: #686b78;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 500;
 }
 
-.login input{
-    width:360px;
-    height:70px;
+.signup p {
+    color: black;
+    font-size: 12px;
+    color: #686b78;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.login input {
+    width: 360px;
+    height: 70px;
     color: black;
     line-height: normal;
     font-size: 17px;
@@ -613,9 +669,10 @@ textarea{
     border: 1px solid grey;
     /* outline: grey; */
 }
-.signup input{
-    width:360px;
-    height:70px;
+
+.signup input {
+    width: 360px;
+    height: 70px;
     color: black;
     line-height: normal;
     font-size: 17px;
@@ -634,7 +691,7 @@ textarea{
     /* outline: grey; */
 }
 
-.login .phnum{
+.login .phnum {
     position: absolute;
     left: 40px;
     top: 186px;
@@ -646,12 +703,16 @@ textarea{
     width: 100%;
     color: #93959f;
     /* color: #111; */
-    will-change: transform,color,font-size;
+    will-change: transform, color, font-size;
     pointer-events: none;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
 }
-.signup .phnum,.username,.uemail,.upass{
+
+.signup .phnum,
+.username,
+.uemail,
+.upass {
     position: absolute;
     left: 40px;
     top: 185px;
@@ -663,48 +724,43 @@ textarea{
     width: 100%;
     color: #93959f;
     /* color: #111; */
-    will-change: transform,color,font-size;
+    will-change: transform, color, font-size;
     pointer-events: none;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
 }
 
-.signup .username{
+.signup .username {
     top: 260px;
 }
 
-.signup .uemail{
+.signup .uemail {
     top: 335px;
 }
 
-.signup .upass{
+.signup .upass {
     top: 410px;
 }
 
-.login .button1{
-    width:360px;
-    height:50px;
-
+.login .button1 {
+    width: 360px;
+    height: 50px;
     display: inline-block;
-    background:rgb(255, 136, 0);
-    background:rgb(255, 115, 0);
-    
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
     /* border: 4px solid rgb(255, 136, 0); */
     /* padding: 5px 20px; */
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     border-radius: 5px;
-
     line-height: normal;
     font-size: 17px;
     margin: 0px 40px;
     padding: 0 20px;
     padding-top: 22px;
-
-
     /* width: 100%; */
     text-decoration: none;
     cursor: pointer;
@@ -724,30 +780,25 @@ textarea{
     text-transform: uppercase;
 }
 
-.signup .button1{
-    width:360px;
-    height:50px;
-
+.signup .button1 {
+    width: 360px;
+    height: 50px;
     display: inline-block;
-    background:rgb(255, 136, 0);
-    background:rgb(255, 115, 0);
-    
+    background: rgb(255, 136, 0);
+    background: rgb(255, 115, 0);
     /* border: 4px solid rgb(255, 136, 0); */
     /* padding: 5px 20px; */
     color: white;
-    border:none;
+    border: none;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     border-radius: 5px;
-
     line-height: normal;
     font-size: 17px;
     margin: 0px 40px;
     padding: 0 20px;
     padding-top: 22px;
-
-
     /* width: 100%; */
     text-decoration: none;
     cursor: pointer;
@@ -767,12 +818,11 @@ textarea{
     text-transform: uppercase;
 }
 
-.center{
-    text-align: center ;
+.center {
+    text-align: center;
 }
 
-
-#scroll{
+#scroll {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -797,7 +847,9 @@ textarea{
     border-bottom-color: #ffffff;
 }
 
+
 /* Dark Mode */
+
 body {
     flex-direction: column;
     transition: background 0.2s linear;
@@ -809,16 +861,16 @@ body.dark {
     /* background-color: #4f4a41; */
 }
 
-body.dark h1{
-    color:rgb(247, 241, 231);
-    text-decoration:dotted underline;
+body.dark h1 {
+    color: rgb(247, 241, 231);
+    text-decoration: dotted underline;
 }
 
-body.dark h2{
+body.dark h2 {
     color: wheat;
 }
 
-body.dark #navbar::before{
+body.dark #navbar::before {
     background-color: rgb(255, 123, 0);
 }
 
@@ -854,8 +906,7 @@ body.dark .label {
     margin-right: 10px;
 }
 
-.aside{
-        
+.aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -864,15 +915,12 @@ body.dark .label {
     /* height: 24px;
     width: 50px; */
     /* transform: scale(1.5); */
-
-    
-        /* display: inline-block; */
-        position: absolute;
-        top: 45px;
-        right: 35px;
-    
-        /* flex-direction: row; */
-        margin-right: 10px;
+    /* display: inline-block; */
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    /* flex-direction: row; */
+    margin-right: 10px;
 }
 
 .label .ball {
@@ -903,11 +951,10 @@ body.dark .label {
     /* padding-right: 7px; */
 }
 
-.label #moon{
+.label #moon {
     margin-right: 0px;
-    
 }
 
-body.dark #scroll{
+body.dark #scroll {
     background-color: rgb(255, 115, 0);
 }

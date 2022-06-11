@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="images/apex-legends-symbol/apex-legends-symbol.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/ap.svg" type="image/x-icon">
     <title>Abhay Da Swaad | aa-gaye-swaad.com</title>
     <link rel="stylesheet" href="css/offers.css">
     <link rel="stylesheet" media="screen and (max-width: 1400px)" href="css/phone.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;800&family=Bree+Serif&family=Ubuntu:wght@300;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;800&family=Bree+Serif&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +23,7 @@
 
         <div id="logo">
             <a href="index.html">
-                <img src="images/apex-legends-symbol/apex-legends-symbol.svg" alt="aa-gaye-swaad.com ">
+                <img src="images/ap.svg" alt="aa-gaye-swaad.com ">
             </a>
         </div>
 
@@ -34,7 +32,7 @@
             <li class="item"><a href="about.html">About Us</a></li>
             <li class="item"><a href="services.html">Services</a></li>
             <li class="item"><a href="offers.html" class="active">Offers</a></li>
-            <li class="item"><a href="contact.html">Contact Us</a></li>
+            <li class="item"><a href="contact.php">Contact Us</a></li>
         </ul>
 
         <div class="aside">
@@ -70,7 +68,7 @@
 
                     <br>
 
-                    <button class="btn1" id="locate">LOGIN</button>
+                    <button class="btn1" id="locate" onclick="chkPhone()">LOGIN</button>
 
                 </form>
                 <p>
@@ -93,7 +91,7 @@
                     </a>
 
 
-                    <input type="tel" name="pnum" id="pnum">
+                    <input type="tel" name="pnum" id="pnum1">
 
                     <label for="pnum" class="phnum" id="num">Phone number</label>
 
@@ -102,7 +100,7 @@
                     <label for="name" class="username" id="uname">Name</label>
 
 
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="emailid">
 
                     <label for="email" class="uemail" id="useremail">Email</label>
 
@@ -113,7 +111,7 @@
 
                     <br>
 
-                    <button class="btn1" id="locate">CONTINUE</button>
+                    <button class="btn1" id="locate1" onclick="chkEmail();">CONTINUE</button>
 
                 </form>
                 <p>
@@ -140,88 +138,46 @@
 
         <h1>Terms and Conditions: Referral Program</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis
-            laboriosam facilis amet, cumque fugit?
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae
-            debitis?
-            <br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio.
-            Quod, vel.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt
-            dolor quaerat sit fuga?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis laboriosam facilis amet, cumque fugit?
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae debitis?
+            <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio. Quod, vel.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt dolor quaerat sit fuga?
         </p>
 
         <h1>Terms and Conditions: Non cashback coupons</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis
-            laboriosam facilis amet, cumque fugit?
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio.
-            Quod, vel.
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio.
-            Quod, vel.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae
-            debitis?
-            <br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio.
-            Quod, vel.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt
-            dolor quaerat sit fuga?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis laboriosam facilis amet, cumque fugit?
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio. Quod, vel.
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio. Quod, vel.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae debitis?
+            <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio. Quod, vel.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt dolor quaerat sit fuga?
         </p>
 
         <h1>Terms and Conditions: Cashback coupons</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis
-            laboriosam facilis amet, cumque fugit?
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae
-            debitis?
-            <br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio.
-            Quod, vel.
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt
-            dolor quaerat sit fuga?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis laboriosam facilis amet, cumque fugit?
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae debitis?
+            <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio. Quod, vel.
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt dolor quaerat sit fuga?
         </p>
 
         <h1>Terms and Conditions: Movie Offer</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis
-            laboriosam facilis amet, cumque fugit?
-            <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae
-            debitis?
-            <br>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
-            <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio.
-            Quod, vel.
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt
-            dolor quaerat sit fuga?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab veniam mollitia recusandae earum explicabo quis laboriosam facilis amet, cumque fugit?
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, voluptatibus.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, amet quas. Earum illum molestiae debitis?
+            <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem temporibus ratione sed?
+            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vitae impedit quaerat dolores optio. Quod, vel.
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium, vero velit incidunt ea sunt dolor quaerat sit fuga?
         </p>
 
     </div>
@@ -299,9 +255,7 @@
 
         <div class="logo">
 
-            <img src="images/apex-legends-symbol/apex-legends-symbol-white.png" alt="">
-
-            Abhay Da Swaad
+            <img src="images/apwhite.png" alt=""> Abhay Da Swaad
 
         </div>
 
